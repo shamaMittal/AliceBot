@@ -1,0 +1,193 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "5afca6d52f",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "psycology_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-6cf730",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "psycology_choice",
+      "flow": "skills/choice-6cf730.flow.json",
+      "next": [
+        {
+          "caption": "User picked [fee]",
+          "condition": "temp['skill-choice-ret'] == \"fee\"",
+          "node": "fee_choice"
+        },
+        {
+          "caption": "User picked [seats]",
+          "condition": "temp['skill-choice-ret'] == \"seats\"",
+          "node": "seats"
+        },
+        {
+          "caption": "User picked [eligibi...]",
+          "condition": "temp['skill-choice-ret'] == \"eligibility\"",
+          "node": "eligibility"
+        },
+        {
+          "caption": "User picked [duration]",
+          "condition": "temp['skill-choice-ret'] == \"duration\"",
+          "node": "duration"
+        },
+        {
+          "caption": "User picked [apply]",
+          "condition": "temp['skill-choice-ret'] == \"apply\"",
+          "node": ""
+        },
+        {
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "Arts.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "psychology_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-7684da",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "fee_choice",
+      "flow": "skills/choice-7684da.flow.json",
+      "next": [
+        {
+          "caption": "User picked [india]",
+          "condition": "temp['skill-choice-ret'] == \"india\"",
+          "node": "india"
+        },
+        {
+          "caption": "User picked [State]",
+          "condition": "temp['skill-choice-ret'] == \"State\"",
+          "node": "state"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "psycology_choice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fee_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "3c797431e5",
+      "name": "india",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jWWUne"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7ec6e50f98",
+      "name": "state",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-hkDpjm"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "e2bb721db9",
+      "name": "fee_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6698a951c0",
+      "name": "seats",
+      "next": [
+        {
+          "condition": "true",
+          "node": "psycology_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ryKrwc"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c3362b5018",
+      "name": "eligibility",
+      "next": [
+        {
+          "condition": "true",
+          "node": "psycology_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-VKgiwH"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "4cf2ca6df0",
+      "name": "duration",
+      "next": [
+        {
+          "condition": "true",
+          "node": "psycology_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CAjGGy"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cdec4ea25d",
+      "name": "psychology_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "psycology_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

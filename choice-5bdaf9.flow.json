@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-pc0t-Q",
+    "keywords": {
+      "fee": [
+        "fee",
+        "Fee Structure"
+      ],
+      "seats": [
+        "seats",
+        "No. of Seats"
+      ],
+      "eligibility": [
+        "eligibility",
+        "Eligibility Criteria"
+      ],
+      "duration": [
+        "duration",
+        "Duration"
+      ],
+      "apply": [
+        "apply",
+        "Apply for Admission"
+      ],
+      "back": [
+        "back",
+        "Go Back"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-pc0t-Q {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "591700"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"contentId\":\"builtin_single-choice-pc0t-Q\",\"keywords\":{\"fee\":[\"fee\",\"Fee Structure\"],\"seats\":[\"seats\",\"No. of Seats\"],\"eligibility\":[\"eligibility\",\"Eligibility Criteria\"],\"duration\":[\"duration\",\"Duration\"],\"apply\":[\"apply\",\"Apply for Admission\"],\"back\":[\"back\",\"Go Back\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "627950"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-invalid-count'] <= undefined",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "777506"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-pc0t-Q {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "422641"
+    }
+  ]
+}

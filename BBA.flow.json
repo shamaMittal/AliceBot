@@ -1,0 +1,193 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "98e4898fce",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-5bdaf9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "bba_choice",
+      "flow": "skills/choice-5bdaf9.flow.json",
+      "next": [
+        {
+          "caption": "User picked [fee]",
+          "condition": "temp['skill-choice-ret'] == \"fee\"",
+          "node": "fee_choice"
+        },
+        {
+          "caption": "User picked [seats]",
+          "condition": "temp['skill-choice-ret'] == \"seats\"",
+          "node": "Seats"
+        },
+        {
+          "caption": "User picked [eligibi...]",
+          "condition": "temp['skill-choice-ret'] == \"eligibility\"",
+          "node": "eligibility"
+        },
+        {
+          "caption": "User picked [duration]",
+          "condition": "temp['skill-choice-ret'] == \"duration\"",
+          "node": "duration"
+        },
+        {
+          "caption": "User picked [apply]",
+          "condition": "temp['skill-choice-ret'] == \"apply\"",
+          "node": ""
+        },
+        {
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "Management.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "bba_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-9dabda",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "fee_choice",
+      "flow": "skills/choice-9dabda.flow.json",
+      "next": [
+        {
+          "caption": "User picked [India]",
+          "condition": "temp['skill-choice-ret'] == \"India\"",
+          "node": "India"
+        },
+        {
+          "caption": "User picked [state]",
+          "condition": "temp['skill-choice-ret'] == \"state\"",
+          "node": "State"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "bba_choice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "Fee_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "84ba009a9c",
+      "name": "India",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-LVgffx"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "701e439e44",
+      "name": "State",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-H39zAC"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "b80bac1183",
+      "name": "Fee_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "014b862737",
+      "name": "Seats",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-viJ-s0"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7669cd43e6",
+      "name": "eligibility",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text--w87X1"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "358a562049",
+      "name": "duration",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3LxM6X"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "1b3aefccee",
+      "name": "bba_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "bba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

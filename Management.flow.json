@@ -1,0 +1,87 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "476a552400",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "management_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-141ab0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "management_choice",
+      "flow": "skills/choice-141ab0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [bba]",
+          "condition": "temp['skill-choice-ret'] == \"bba\"",
+          "node": "bba"
+        },
+        {
+          "caption": "User picked [mba]",
+          "condition": "temp['skill-choice-ret'] == \"mba\"",
+          "node": "mba"
+        },
+        {
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "ShowAllPrograms.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "management_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "24e379c000",
+      "name": "bba",
+      "next": [
+        {
+          "condition": "true",
+          "node": "BBA.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "e9865ce450",
+      "name": "mba",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MBA.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "14fcb2e888",
+      "name": "management_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "management_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

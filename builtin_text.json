@@ -1,0 +1,292 @@
+[
+  {
+    "id": "builtin_text-BeInpd",
+    "formData": {
+      "text$en": "Please choose from one of the following  disciplines.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:31:29.909Z",
+    "modifiedOn": "2019-06-21T13:33:29.889Z"
+  },
+  {
+    "id": "builtin_text-EJlaxB",
+    "formData": {
+      "text$en": "Kindly choose one of the following program to proceed.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:37:21.450Z",
+    "modifiedOn": "2019-06-21T13:37:21.450Z"
+  },
+  {
+    "id": "builtin_text-WA1b_K",
+    "formData": {
+      "text$en": "The academic fee for BA (Hons.) English for All India Quota offered at our University is Rs 91,100 (for 1st year) Rs 79,200 (for 2nd year) Rs 89,950 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) * Academic Services Fee, Security Deposit (Refundable)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:49:37.293Z",
+    "modifiedOn": "2019-06-21T14:17:32.838Z"
+  },
+  {
+    "id": "builtin_text-uxR43D",
+    "formData": {
+      "text$en": "The academic fee at for BA (Hons.) English for State quota offered at our University is Rs 75,500 (for 1st year) Rs 62,820 (for 2nd year) Rs 72,752 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) *Academic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:50:22.780Z",
+    "modifiedOn": "2019-06-21T14:18:23.929Z"
+  },
+  {
+    "id": "builtin_text-vggjsg",
+    "formData": {
+      "text$en": "The number of seats in BA (Hons.) English offered at our University are as per the reservation criteria. Kindly note, 60% seats of the program are reserved for All India Students and Foreign Students (i.e 50% for All India Students and 10% for International Students).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:51:12.786Z",
+    "modifiedOn": "2019-06-21T13:51:12.786Z"
+  },
+  {
+    "id": "builtin_text-GGiq7p",
+    "formData": {
+      "text$en": "The criteria for BA (Hons.) English offered at our University is as follows: The candidate should have completed class XII in any discipline with a minimum of 45% marks & English as a subject.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:51:41.176Z",
+    "modifiedOn": "2019-06-21T13:51:41.176Z"
+  },
+  {
+    "id": "builtin_text-jZov6J",
+    "formData": {
+      "text$en": "The duration for BA (Hons.) English offered at our University is 3 years.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:52:12.009Z",
+    "modifiedOn": "2019-06-21T13:52:12.009Z"
+  },
+  {
+    "id": "builtin_text-UnWWVa",
+    "formData": {
+      "text$en": " In order to help you with the admissions, we need some of your information.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T13:52:59.321Z",
+    "modifiedOn": "2019-06-21T13:52:59.321Z"
+  },
+  {
+    "id": "builtin_text-m9-_C2",
+    "formData": {
+      "text$en": "The academic fee for BA (Hons.) Economicsfor All India Quota offered at our University is Rs 91,100 (for 1st year) Rs 79,200 (for 2nd year) Rs 89,950 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) * Academic Services Fee, Security Deposit (Refundable)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:17:55.212Z",
+    "modifiedOn": "2019-06-21T14:17:55.212Z"
+  },
+  {
+    "id": "builtin_text-rwy9KD",
+    "formData": {
+      "text$en": "The academic fee at for BA (Hons.) Economics for State quota offered at our University is Rs 75,500 (for 1st year) Rs 62,820 (for 2nd year) Rs 72,752 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) *Academic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:18:48.793Z",
+    "modifiedOn": "2019-06-21T14:18:48.793Z"
+  },
+  {
+    "id": "builtin_text-5BUnSh",
+    "formData": {
+      "text$en": "The number of seats in BA (Hons.) Economics offered at our University are as per the reservation criteria. Kindly note, 60% seats of the program are reserved for All India Students and Foreign Students (i.e 50% for All India Students and 10% for International Students).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:20:46.315Z",
+    "modifiedOn": "2019-06-21T14:20:46.315Z"
+  },
+  {
+    "id": "builtin_text-Nf6NOT",
+    "formData": {
+      "text$en": " The criteria for BA (Hons.) Economics offered at our University is as follows: The candidate should have completed class XII in any discipline with a minimum of 45% marks & English as a subject.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:22:03.834Z",
+    "modifiedOn": "2019-06-21T14:22:03.834Z"
+  },
+  {
+    "id": "builtin_text--WvNfr",
+    "formData": {
+      "text$en": "The duration for BA (Hons.) Economics offered at our University is 3 years.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:22:44.589Z",
+    "modifiedOn": "2019-06-21T14:22:44.589Z"
+  },
+  {
+    "id": "builtin_text-jWWUne",
+    "formData": {
+      "text$en": "The academic fee for BA (Hons.) Psychology for All India Quota offered at our University is Rs 91,100 (for 1st year) Rs 79,200 (for 2nd year) Rs 89,950 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) * Academic Services Fee, Security Deposit (Refundable)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:31:37.141Z",
+    "modifiedOn": "2019-06-21T14:31:37.141Z"
+  },
+  {
+    "id": "builtin_text-hkDpjm",
+    "formData": {
+      "text$en": "The academic fee at for BA (Hons.) Psychology for State quota offered at our University is Rs 75,500 (for 1st year) Rs 62,820 (for 2nd year) Rs 72,752 (for 3rd year) *Tuition Fee inclusive of Admission Fee (One time, non-refundable) *Academic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:33:50.871Z",
+    "modifiedOn": "2019-06-21T14:33:50.871Z"
+  },
+  {
+    "id": "builtin_text-ryKrwc",
+    "formData": {
+      "text$en": "The number of seats in BA (Hons.) Psychology offered at our University are as per the reservation criteria. Kindly note, 60% seats of the program are reserved for All India Students and Foreign Students (i.e 50% for All India Students and 10% for International Students).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:35:40.116Z",
+    "modifiedOn": "2019-06-21T14:35:40.116Z"
+  },
+  {
+    "id": "builtin_text-VKgiwH",
+    "formData": {
+      "text$en": "The criteria for BA (Hons.) Psychology offered at our University is as follows: The candidate should have completed class XII in any discipline with a minimum of 45% marks & English as a subject.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:36:17.022Z",
+    "modifiedOn": "2019-06-21T14:36:17.022Z"
+  },
+  {
+    "id": "builtin_text-CAjGGy",
+    "formData": {
+      "text$en": "The duration for BA (Hons.) Psychology offered at our University is 3 years.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:36:57.844Z",
+    "modifiedOn": "2019-06-21T14:36:57.844Z"
+  },
+  {
+    "id": "builtin_text-LVgffx",
+    "formData": {
+      "text$en": "The academic fee for BBA offered at our University is \nRs 1,49,600 (for 1st year)\nRs 1,37,476 (for 2nd year)\nRs 1,51,140 (for 3rd year)\n* Tuition Fee inclusive of Admission Fee (One time, non-refundable)\n*  Academic Services Fee, Security Deposit (Refundable)",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:55:16.004Z",
+    "modifiedOn": "2019-06-21T14:55:16.004Z"
+  },
+  {
+    "id": "builtin_text-H39zAC",
+    "formData": {
+      "text$en": "The academic fee for BBA offered at our University is \nRs 1,19,570 (for 1st year)\nRs 1,05,944 (for 2nd year)\nRs 1,18,032 (for 3rd year)\n* Tuition Fee inclusive of Admission Fee (One time, non-refundable)\n* Academic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:56:22.910Z",
+    "modifiedOn": "2019-06-21T14:56:22.910Z"
+  },
+  {
+    "id": "builtin_text-viJ-s0",
+    "formData": {
+      "text$en": "The number of seats in BBA offered at our University are as per the reservation criteria.\nKindly note, 60% seats of the program are reserved for All India Students and Foreign Students (i.e 50% for All India Students and 10% for International Students).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:58:47.618Z",
+    "modifiedOn": "2019-06-21T14:58:47.618Z"
+  },
+  {
+    "id": "builtin_text--w87X1",
+    "formData": {
+      "text$en": "The criteria for BBA offered at our University is as follows: \nThe candidate should have completed class XII in any discipline with a minimum of 45% marks & English as a subject.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T14:59:56.852Z",
+    "modifiedOn": "2019-06-21T14:59:56.852Z"
+  },
+  {
+    "id": "builtin_text-3LxM6X",
+    "formData": {
+      "text$en": "The duration for BBA offered at our University is 3 years.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T15:00:46.818Z",
+    "modifiedOn": "2019-06-21T15:00:46.818Z"
+  },
+  {
+    "id": "builtin_text-EOBFQY",
+    "formData": {
+      "text$en": "The number of seats in MBA offered at our University are as per the reservation criteria.\nKindly note, 60% seats of the program are reserved for All India Students and Foreign Students (i.e 50% for All India Students and 10% for International Students).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T16:46:39.325Z",
+    "modifiedOn": "2019-06-21T16:46:39.325Z"
+  },
+  {
+    "id": "builtin_text-5c3nLN",
+    "formData": {
+      "text$en": "The criteria for MBA offered atour University is as follows: \nThe candidate should be a graduate in any discipline with a minimum of 50% marks.\n\n**Kindly note, for final year appearing candidates, an aggregate of all previous years should be a minimum of 50% marks (45% in case of candidate belonging to SC/ST/  OBC).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T16:47:49.634Z",
+    "modifiedOn": "2019-06-21T16:47:49.634Z"
+  },
+  {
+    "id": "builtin_text-PgOkCt",
+    "formData": {
+      "text$en": "The duration for MBA offered at our University is 2 years.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T16:48:30.019Z",
+    "modifiedOn": "2019-06-21T16:48:30.019Z"
+  },
+  {
+    "id": "builtin_text-Cqp4M9",
+    "formData": {
+      "text$en": "The academic fee for MBA offered at our University is \nRs 3,01,600 (for 1st year) \nRs 2,67,726 (for 2nd year)\n\n*Tuition Fee inclusive of Admission Fee (One time, non-refundable)\n*Academic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T16:50:50.052Z",
+    "modifiedOn": "2019-06-21T16:50:50.052Z"
+  },
+  {
+    "id": "builtin_text-djJLo4",
+    "formData": {
+      "text$en": "The academic fee for MBA offered at our University is \nRs 2,44,270 (for 1st year) \nRs 2,07,530(for 2nd year)\n\n**Kindly note, the above fee is inclusive of \nTuition Fee, Admission Fee (One time, non-refundable)\nAcademic Services Fee, Security Deposit (Refundable).",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T16:52:26.813Z",
+    "modifiedOn": "2019-06-21T16:52:26.813Z"
+  },
+  {
+    "id": "builtin_text-QUJzKT",
+    "formData": {
+      "text$en": "I am sorry, currently I don't have information about the same.",
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2019-06-21T17:21:24.811Z",
+    "modifiedOn": "2019-06-21T17:21:24.811Z"
+  }
+]

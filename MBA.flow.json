@@ -1,0 +1,193 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "d553e0f929",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "mba_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-d75f9c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "mba_choice",
+      "flow": "skills/choice-d75f9c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [fee]",
+          "condition": "temp['skill-choice-ret'] == \"fee\"",
+          "node": "fee_choice"
+        },
+        {
+          "caption": "User picked [seats]",
+          "condition": "temp['skill-choice-ret'] == \"seats\"",
+          "node": "Seats"
+        },
+        {
+          "caption": "User picked [eligibi...]",
+          "condition": "temp['skill-choice-ret'] == \"eligibility\"",
+          "node": "Eligibility"
+        },
+        {
+          "caption": "User picked [duration]",
+          "condition": "temp['skill-choice-ret'] == \"duration\"",
+          "node": "Duration"
+        },
+        {
+          "caption": "User picked [apply]",
+          "condition": "temp['skill-choice-ret'] == \"apply\"",
+          "node": ""
+        },
+        {
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "Management.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "Failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-f70e6e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "fee_choice",
+      "flow": "skills/choice-f70e6e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [india]",
+          "condition": "temp['skill-choice-ret'] == \"india\"",
+          "node": "India"
+        },
+        {
+          "caption": "User picked [State]",
+          "condition": "temp['skill-choice-ret'] == \"State\"",
+          "node": "State"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "mba_choice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fee_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "48553a9874",
+      "name": "India",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Cqp4M9"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "689ebbd8ad",
+      "name": "State",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-djJLo4"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "1bedd365de",
+      "name": "fee_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a8aa68d1f5",
+      "name": "Seats",
+      "next": [
+        {
+          "condition": "true",
+          "node": "mba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-EOBFQY"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ccef72cb16",
+      "name": "Eligibility",
+      "next": [
+        {
+          "condition": "true",
+          "node": "mba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5c3nLN"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "dc6e2d9368",
+      "name": "Duration",
+      "next": [
+        {
+          "condition": "true",
+          "node": "mba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-PgOkCt"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d9a394635a",
+      "name": "Failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "mba_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

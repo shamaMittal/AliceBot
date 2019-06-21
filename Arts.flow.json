@@ -1,0 +1,105 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "9f0a5835be",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "arts_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-ff8e67",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "arts_choice",
+      "flow": "skills/choice-ff8e67.flow.json",
+      "next": [
+        {
+          "caption": "User picked [english]",
+          "condition": "temp['skill-choice-ret'] == \"english\"",
+          "node": "english"
+        },
+        {
+          "caption": "User picked [economi...]",
+          "condition": "temp['skill-choice-ret'] == \"economics\"",
+          "node": "economics"
+        },
+        {
+          "caption": "User picked [psycolo...]",
+          "condition": "temp['skill-choice-ret'] == \"psycology\"",
+          "node": "psycology"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "ShowAllPrograms.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "arts_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "aefe364bb0",
+      "name": "english",
+      "next": [
+        {
+          "condition": "true",
+          "node": "English.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "ae21fc9d1a",
+      "name": "economics",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Economics.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "9bdbb5cc93",
+      "name": "psycology",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Psychology.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "479452099a",
+      "name": "arts_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "arts_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

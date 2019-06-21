@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'AllPrograms'",
+        "node": "ShowAllPrograms.flow.json"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    }
+  ]
+}

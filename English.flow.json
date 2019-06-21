@@ -1,0 +1,194 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "198290d6ce",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "english_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-afd73e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "english_choice",
+      "flow": "skills/choice-afd73e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Fee Str...]",
+          "condition": "temp['skill-choice-ret'] == \"Fee Structure\"",
+          "node": "fee_choice"
+        },
+        {
+          "caption": "User picked [No. of ...]",
+          "condition": "temp['skill-choice-ret'] == \"No. of Seats\"",
+          "node": "seats"
+        },
+        {
+          "caption": "User picked [Eligibi...]",
+          "condition": "temp['skill-choice-ret'] == \"Eligibility Criteria\"",
+          "node": "eligibility"
+        },
+        {
+          "caption": "User picked [Duration]",
+          "condition": "temp['skill-choice-ret'] == \"Duration\"",
+          "node": "duration"
+        },
+        {
+          "caption": "User picked [Apply f...]",
+          "condition": "temp['skill-choice-ret'] == \"Apply for Admission\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "Arts.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "english_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-920f52",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "fee_choice",
+      "flow": "skills/choice-920f52.flow.json",
+      "next": [
+        {
+          "caption": "User picked [india]",
+          "condition": "temp['skill-choice-ret'] == \"india\"",
+          "node": "india"
+        },
+        {
+          "caption": "User picked [state]",
+          "condition": "temp['skill-choice-ret'] == \"state\"",
+          "node": "state"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "english_choice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fee_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4c775beda1",
+      "name": "india",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-WA1b_K"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f550e26be8",
+      "name": "state",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uxR43D"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "4d1e2bd6a3",
+      "name": "fee_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "504ce5b81a",
+      "name": "seats",
+      "next": [
+        {
+          "condition": "true",
+          "node": "english_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vggjsg"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7a6a1a8e47",
+      "name": "eligibility",
+      "next": [
+        {
+          "condition": "true",
+          "node": "english_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-GGiq7p"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d120960522",
+      "name": "duration",
+      "next": [
+        {
+          "condition": "true",
+          "node": "english_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jZov6J"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7f7d8e0d40",
+      "name": "english_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "english_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

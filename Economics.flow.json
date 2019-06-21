@@ -1,0 +1,193 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "84c62aa703",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "economics_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-9be374",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "economics_choice",
+      "flow": "skills/choice-9be374.flow.json",
+      "next": [
+        {
+          "caption": "User picked [fee]",
+          "condition": "temp['skill-choice-ret'] == \"fee\"",
+          "node": "fee_choice"
+        },
+        {
+          "caption": "User picked [seats]",
+          "condition": "temp['skill-choice-ret'] == \"seats\"",
+          "node": "seats"
+        },
+        {
+          "caption": "User picked [eligibi...]",
+          "condition": "temp['skill-choice-ret'] == \"eligibility\"",
+          "node": "eligibility"
+        },
+        {
+          "caption": "User picked [duration]",
+          "condition": "temp['skill-choice-ret'] == \"duration\"",
+          "node": "duration"
+        },
+        {
+          "caption": "User picked [apply]",
+          "condition": "temp['skill-choice-ret'] == \"apply\"",
+          "node": ""
+        },
+        {
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "Arts.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-01ad7c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "fee_choice",
+      "flow": "skills/choice-01ad7c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [india]",
+          "condition": "temp['skill-choice-ret'] == \"india\"",
+          "node": "india"
+        },
+        {
+          "caption": "User picked [State]",
+          "condition": "temp['skill-choice-ret'] == \"State\"",
+          "node": "state"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": "economics_choice"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "fee_failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c6f6f31c76",
+      "name": "india",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-m9-_C2"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "3745b1571b",
+      "name": "state",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rwy9KD"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "55d110824d",
+      "name": "fee_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "fee_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a8d13c34a8",
+      "name": "seats",
+      "next": [
+        {
+          "condition": "true",
+          "node": "economics_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5BUnSh"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cb3f2d2c95",
+      "name": "eligibility",
+      "next": [
+        {
+          "condition": "true",
+          "node": "economics_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Nf6NOT"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2b95425fde",
+      "name": "duration",
+      "next": [
+        {
+          "condition": "true",
+          "node": "economics_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text--WvNfr"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "9a1d685022",
+      "name": "economics_failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "economics_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}

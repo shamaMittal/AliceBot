@@ -1,0 +1,100 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "0a46c156c3",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "show_choice"
+        }
+      ]
+    },
+    {
+      "id": "skill-61ce08",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "show_choice",
+      "flow": "skills/choice-61ce08.flow.json",
+      "next": [
+        {
+          "caption": "User picked [arts]",
+          "condition": "temp['skill-choice-ret'] == \"arts\"",
+          "node": "arts"
+        },
+        {
+          "caption": "User picked [law]",
+          "condition": "temp['skill-choice-ret'] == \"law\"",
+          "node": "law"
+        },
+        {
+          "caption": "User picked [managem...]",
+          "condition": "temp['skill-choice-ret'] == \"management\"",
+          "node": "management"
+        },
+        {
+          "caption": "User picked [back]",
+          "condition": "temp['skill-choice-ret'] == \"back\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "failure"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "a86feafa19",
+      "name": "arts",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Arts.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "53f6905f7b",
+      "name": "law",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "cdc16068a0",
+      "name": "management",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Management.flow.json"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "3be3b98569",
+      "name": "failure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "show_choice"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QUJzKT"
+      ],
+      "onReceive": null
+    }
+  ]
+}
